@@ -1,8 +1,9 @@
 .App {
- min-height: 100vh;
+    min-height: 100vh;
 
-font-family: "Roboto", sans-serif;
-  text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-align: center;
 
-  background-color: #e8e8e8;
+    background-color: #F9F9F9;
 }

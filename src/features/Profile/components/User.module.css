@@ -1,0 +1,45 @@
+.userLink {
+  color: #0064EB;
+  text-decoration: none
+}
+.avatar {
+  width: 100%;
+  max-width: 300px;
+
+  border-radius: 50%;
+}
+.nameBlock {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+}
+.nameBlock h3 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 130%;
+}
+.nameBlock a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #0064EB;
+  text-decoration: none;
+}
+
+.followersBlock {
+  display: flex;
+
+  margin-top: 20px;
+
+  opacity: 0.7;
+}
+.followersBlock span {
+  margin-right: 20px;
+  margin-left: 5px;
+
+}
+.userBlock {
+  display: flex;
+  flex-direction: column;
+}

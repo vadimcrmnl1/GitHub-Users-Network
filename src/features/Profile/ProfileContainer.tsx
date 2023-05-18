@@ -1,20 +1,23 @@
 import React from 'react'
 
-import { Repository } from './components/Repository'
+import { useAppSelector } from '../../app/hooks'
+import { EmptyListPage } from '../../common/components/Pages/EmptyListPage'
+import { RepositoryContainer } from '../Repositories/RepositoryContainer'
+import { selectRepos } from '../Repositories/selectors'
+
 import { User } from './components/User'
 import s from './ProfileContainer.module.css'
 
 export const ProfileContainer = () => {
+  const repos = useAppSelector(selectRepos)
+
   return (
     <div className={s.wrapper}>
       <div className={s.userContainer}>
         <User />
       </div>
       <div className={s.reposContainer}>
-        <div className={s.reposBlock}>
-          <h2>Repositories (count)</h2>
-          <Repository />
-        </div>
+        {repos.length ? <RepositoryContainer /> : <EmptyListPage />}
       </div>
     </div>
   )
