@@ -45,6 +45,7 @@ export const getReposTC =
     const params: ParamsDataType = {
       page: page,
       per_page: 4,
+      sort: 'pushed',
     }
 
     dispatch(setAppLoadingAC(true))

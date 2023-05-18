@@ -14,6 +14,7 @@ export const usersAPI = {
 }
 export type ParamsDataType = {
   per_page?: number
+  sort?: string
   page: number
 }
 export type ResponseUserDataType = {

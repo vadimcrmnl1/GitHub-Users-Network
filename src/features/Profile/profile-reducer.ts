@@ -73,7 +73,7 @@ export const getUserTC =
   (userName: string): AppThunk<AllReducersActionsType> =>
   async dispatch => {
     dispatch(setAppLoadingAC(true))
-    dispatch(setIncorrectUserAC(false))
+
     try {
       const res = await usersAPI.getUser(userName)
 
@@ -86,6 +86,7 @@ export const getUserTC =
         dispatch(setUserAvatarAC(res.data.avatar_url))
         dispatch(setUserUrlAC(res.data.html_url))
         dispatch(getReposTC(userName, 1))
+        dispatch(setIncorrectUserAC(false))
       }
     } catch (err: any) {
       dispatch(setIncorrectUserAC(true))
