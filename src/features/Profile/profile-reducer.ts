@@ -1,5 +1,6 @@
 import { AllReducersActionsType, AppThunk } from '../../app/hooks'
 import { usersAPI } from '../api/api'
+import { setPageAC } from '../Repositories/actions'
 import { getReposTC } from '../Repositories/repository-reducer'
 
 import {
@@ -91,6 +92,7 @@ export const getUserTC =
     } catch (err: any) {
       dispatch(setIncorrectUserAC(true))
     } finally {
+      dispatch(setPageAC(1))
       dispatch(setFirstStartAC(false))
       dispatch(setAppLoadingAC(false))
     }
