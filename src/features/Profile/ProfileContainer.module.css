@@ -15,5 +15,25 @@
 
 .reposContainer {
     grid-area: r;
+
+    margin-left: 10px;
 }
 
+@media screen and (max-width: 640px) {
+    .reposContainer {
+        grid-area: ur;
+
+        width: 100%;
+        margin-top: 20px;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-areas:
+    'u'
+    'ur';
+        grid-template-columns: 1fr;
+    }
+    .userContainer {
+        width: 100%;
+    }
+}

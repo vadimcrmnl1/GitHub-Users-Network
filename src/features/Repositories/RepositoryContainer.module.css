@@ -15,12 +15,16 @@
     align-content: center;
     justify-content: space-evenly;
 
-    min-height: 100px;
+    min-height: 80px;
     margin-top: 20px;
 
     background-color: white;
     border-radius: 5px;
+    box-shadow: 5px 5px 5px #c9c9c9;
+
 }
+
+
 .repoLink {
     margin-right: 40px;
     margin-left: 40px;
