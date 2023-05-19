@@ -23,6 +23,8 @@ export const RepositoryContainer = () => {
             name={rep.name}
             html_url={rep.html_url}
             description={rep.description}
+            homepage={rep.homepage}
+            language={rep.language}
           />
         )
       })}

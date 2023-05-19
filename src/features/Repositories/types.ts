@@ -7,5 +7,7 @@ export type RepositoryDataType = {
   name: string
   html_url: string
   description: string
+  homepage: string
+  language?: string
 }
 export type RepositoriesActionsType = ReturnType<InferValueType<typeof actions>>

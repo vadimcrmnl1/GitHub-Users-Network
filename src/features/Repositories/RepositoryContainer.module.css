@@ -29,6 +29,7 @@
     margin-right: 40px;
     margin-left: 40px;
 }
+
 .repoLink p {
     font-size: 16px;
     font-weight: 400;
@@ -41,6 +42,24 @@
     line-height: 29px;
     color: #0064EB;
     text-decoration: none;
+}
+
+.titleBlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.titleBlock img {
+    width: 40px;
+    padding: 5px 0 0 20px;
+}
+
+.repoLink span {
+    font-size: 14px;
+
+    opacity: 0.6;
 }
 
 .paginationBlock {
