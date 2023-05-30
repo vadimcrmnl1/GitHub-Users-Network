@@ -71,7 +71,7 @@ export const Header = () => {
     dispatch(setSearchUserNameAC(event.currentTarget.value))
   }
   const handleEnterSearch = (key: React.KeyboardEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    if (key.key === 'Enter') {
+    if (key.key === 'Enter' && userName.length) {
       dispatch(getUserTC(userName))
     }
   }
